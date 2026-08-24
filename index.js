@@ -20,8 +20,9 @@ client.on('ready', async () => {
   const r = new RichPresence(client)
     .setApplicationId('1541368136379404368')
     .setType('PLAYING')
-    .setDetails('Nguoi bat an')          // Dòng 2 (Details)
-    .setState('Online 24/7')             // Dòng 3 (State) giữ nguyên
+    .setName('Emc4')                      // Bắt buộc phải có dòng này để định danh tên
+    .setDetails('Nguoi bat an')          // Dòng 2
+    .setState('Online 24/7')             // Dòng 3
     .setStartTimestamp(Date.now())       // Đếm thời gian
     .setAssetsLargeImage('anh1')         // Key ảnh của bạn
     .setAssetsLargeText('Emc4')          // Chữ khi rê chuột vào ảnh
