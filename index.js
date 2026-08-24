@@ -20,12 +20,12 @@ client.on('ready', async () => {
   const r = new RichPresence(client)
     .setApplicationId('1541368136379404368')
     .setType('PLAYING')
-    .setName('Emc4')                      // Bắt buộc phải có dòng này để định danh tên
-    .setDetails('Nguoi bat an')          // Dòng 2
-    .setState('Online 24/7')             // Dòng 3
-    .setStartTimestamp(Date.now())       // Đếm thời gian
-    .setAssetsLargeImage('anh1')         // Key ảnh của bạn
-    .setAssetsLargeText('Emc4')          // Chữ khi rê chuột vào ảnh
+    .setName('Emc4')
+    .setDetails('Nguoi bat an')
+    .setState('Online 24/7')
+    .setStartTimestamp(Date.now())
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1411619155257327673/1541499578854019166/Gemini_Generated_Image_jtcemcjtcemcjtce.png?ex=6a8dd0db&is=6a8c7f5b&hm=993cb487f3ecd9f735ac97881a58c539777852524c7f89c15927971cf39d7bff&=&format=webp&quality=lossless&width=768&height=768')
+    .setAssetsLargeText('Emc4')
     .addButton('BIO', 'https://guns.lol/forgetsama')
     .addButton('DISCORD', 'https://discord.gg/zxCxC75cmx');
 
