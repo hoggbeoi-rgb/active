@@ -17,13 +17,16 @@ const client = new Client({ checkUpdate: false });
 client.on('ready', async () => {
   console.log(`Da dang nhap: ${client.user.tag}`);
 
+  // Trừ lùi 1305 giờ (1305 * 60 phút * 60 giây * 1000 ms)
+  const timeOffset = 1305 * 60 * 60 * 1000;
+  const fakeStartTime = Date.now() - timeOffset;
+
   const r = new RichPresence(client)
     .setApplicationId('1541368136379404368')
     .setType('PLAYING')
-    .setName('𝗘𝗺𝗰𝟰')                     // Dòng 1: Đậm dày bản to (Bold Sans)
-    .setDetails('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')           // Dòng 2: Phóng to theo phong cách Bold đồng bộ
-    .setState('Online 24/7')             // Dòng 3: Giữ nguyên
-    .setStartTimestamp(Date.now())
+    .setName('𝗘𝗺𝗰𝟰')
+    .setDetails('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')
+    .setStartTimestamp(fakeStartTime)    // Hiển thị mốc 1305 giờ đếm tiếp
     .setAssetsLargeImage('https://media.discordapp.net/attachments/1411619155257327673/1541499578854019166/Gemini_Generated_Image_jtcemcjtcemcjtce.png?ex=6a8dd0db&is=6a8c7f5b&hm=993cb487f3ecd9f735ac97881a58c539777852524c7f89c15927971cf39d7bff&=&format=webp&quality=lossless&width=768&height=768')
     .setAssetsLargeText('Emc4')
     .addButton('BIO', 'https://guns.lol/forgetsama')
