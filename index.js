@@ -33,8 +33,8 @@ client.on('ready', async () => {
 
   client.user.setPresence({
     activities: [{
-      name: '𝗘𝗺𝗰𝟰',
       type: 'WATCHING', // Ép chuẩn định dạng WATCHING
+      name: '𝗘𝗺𝗰𝟰',
       details: r.details,
       timestamps: r.timestamps,
       assets: r.assets,
