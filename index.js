@@ -23,9 +23,10 @@ client.on('ready', async () => {
 
   const r = new RichPresence(client)
     .setApplicationId('1541368136379404368')
-    .setType(3) // 3 tương ứng với WATCHING
-    .setName('𝗘𝗺𝗰𝟰')
-    .setDetails('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')
+    .setType('WATCHING')
+    .setName('⃟')                          // Ký tự đặc biệt ở tiêu đề
+    .setDetails('𝗘𝗺𝗰𝟰')                  // Dòng 1 cạnh ảnh (to & đậm)
+    .setState('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')             // Dòng 2 dưới Emc4
     .setStartTimestamp(fakeStartTime)
     .setAssetsLargeImage('https://media.discordapp.net/attachments/1411619155257327673/1541499578854019166/Gemini_Generated_Image_jtcemcjtcemcjtce.png?ex=6a8dd0db&is=6a8c7f5b&hm=993cb487f3ecd9f735ac97881a58c539777852524c7f89c15927971cf39d7bff&=&format=webp&quality=lossless&width=768&height=768')
     .setAssetsLargeText('Emc4')
@@ -33,9 +34,10 @@ client.on('ready', async () => {
 
   client.user.setPresence({
     activities: [{
-      type: 'WATCHING', // Ép chuẩn định dạng WATCHING
-      name: '𝗘𝗺𝗰𝟰',
+      name: '⃟',
+      type: 'WATCHING',
       details: r.details,
+      state: r.state,
       timestamps: r.timestamps,
       assets: r.assets,
       buttons: r.buttons,
