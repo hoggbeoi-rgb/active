@@ -23,7 +23,7 @@ client.on('ready', async () => {
 
   const r = new RichPresence(client)
     .setApplicationId('1541368136379404368')
-    .setType('Watching')
+    .setType('WATCHING')
     .setName('𝗘𝗺𝗰𝟰')
     .setDetails('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')
     .setStartTimestamp(fakeStartTime)    // Hiển thị mốc 130508 giờ
