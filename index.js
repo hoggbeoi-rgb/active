@@ -31,7 +31,7 @@ client.on('ready', async () => {
     .setDetails('𝗘𝗺𝗰𝟰')                  // Dòng to cạnh ảnh
     .setState('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')             // Dòng dưới Emc4
     .setStartTimestamp(fakeStartTime)
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1411619155257327673/1541499578854019166/Gemini_Generated_Image_jtcemcjtcemcjtce.png?ex=6a8fcb1b&is=6a8e799b&hm=304655853bb768c056c0978e0e60db2e18baa9f063d0487f2e81340f1062e8c5&=&format=webp&quality=lossless&width=384&height=384')
+    .setAssetsLargeImage('https://media.discordapp.net/attachments/1411619155257327673/1541499578854019166/Gemini_Generated_Image_jtcemcjtcemcjtce.png?ex=6a9316db&is=6a91c55b&hm=ff8de40734e9d9f00be7546ed4bd0cdc66d3c33ee616d3b91813f1035b41984f&=&format=webp&quality=lossless&width=1024&height=1024')
     .setAssetsLargeText('Emc4')
     .addButton('BIO', 'https://guns.lol/fjshlaca');
 
