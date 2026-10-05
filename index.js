@@ -24,31 +24,21 @@ client.on('ready', async () => {
   // Dùng ký tự khoảng trắng đặc biệt 'ㅤ' (Hangul Filler) để không hiện chữ gì
   const invisibleName = 'ㅤ';
 
-  const r = new RichPresence(client)
-    .setApplicationId('1541368136379404368')
-    .setType('WATCHING')
-    .setName(invisibleName)
-    .setDetails('𝗘𝗺𝗰𝟰')                  // Dòng to cạnh ảnh
-    .setState('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')             // Dòng dưới Emc4
-    .setStartTimestamp(fakeStartTime)
-    .setAssetsLargeImage('https://i.ibb.co/cXg5ys7G/anh1.png')
-    .setAssetsLargeText('Emc4')
-    .addButton('BIO', 'https://guns.lol/fjshlaca');
+const r = new RichPresence(client)
+      .setApplicationId('1541368136379404368')
+      .setType('WATCHING')
+      .setName(invisibleName)
+      .setDetails('Emc4')
+      .setState('Nguoi bat an')
+      .setStartTimestamp(fakeStartTime)
+      .setAssetsLargeImage('1541490373447262311')
+      .setAssetsLargeText('Emc4')
+      .addButton('BIO', 'https://guns.lol/fjshlaca');
 
-  client.user.setPresence({
-    activities: [{
-      name: invisibleName,
-      type: 'WATCHING',
-      details: r.details,
-      state: r.state,
-      timestamps: r.timestamps,
-      assets: r.assets,
-      buttons: r.buttons,
-      application_id: r.application_id
-    }],
-    status: 'online'
-  });
-
+    client.user.setPresence({
+      activities: [r],
+      status: 'online'
+    });
   console.log('Rich Presence da cap nhat thanh cong!');
 });
 
