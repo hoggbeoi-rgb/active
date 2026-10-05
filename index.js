@@ -39,7 +39,7 @@ const r = new RichPresence(client)
       activities: [r],
       status: 'online'
     });
-  console.log('Rich Presence da cap nhat thanh cong!');
+  console.log('Active da cap nhat thanh cong!');
 });
 
 client.login(process.env.DISCORD_TOKEN);
