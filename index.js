@@ -31,7 +31,7 @@ client.on('ready', async () => {
     .setDetails('𝗘𝗺𝗰𝟰')                  // Dòng to cạnh ảnh
     .setState('𝗡𝗴𝘂𝗼𝗶 𝗯𝗮𝘁 𝗮𝗻')             // Dòng dưới Emc4
     .setStartTimestamp(fakeStartTime)
-    .setAssetsLargeImage('anh1')
+    .setAssetsLargeImage('1541490373447262311')
     .setAssetsLargeText('Emc4')
     .addButton('BIO', 'https://guns.lol/fjshlaca');
 
